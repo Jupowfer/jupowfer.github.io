@@ -20,7 +20,7 @@ title: 归档
       
       <li class="archive-item">
         <time>{{ post.date | date: "%m-%d" }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       
       {% if forloop.last %}
