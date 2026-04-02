@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">
-        <i class="icon-calendar"></i> {{ page.date | date: "%Y-%m-%d" }}
+        <i class="fa-regular fa-calendar"></i> {{ page.date | date: "%Y-%m-%d" }}
       </time>
       {% if page.tags %}
       <span class="post-tags">
@@ -26,7 +26,7 @@ layout: default
   <div class="post-navigation">
     {% if page.previous %}
     <a class="prev-post" href="{{ page.previous.url }}">
-      <i class="icon-arrow-left"></i>
+      <i class="fa-solid fa-arrow-left"></i>
       <span>{{ page.previous.title }}</span>
     </a>
     {% endif %}
@@ -34,7 +34,7 @@ layout: default
     {% if page.next %}
     <a class="next-post" href="{{ page.next.url }}">
       <span>{{ page.next.title }}</span>
-      <i class="icon-arrow-right"></i>
+      <i class="fa-solid fa-arrow-right"></i>
     </a>
     {% endif %}
   </div>

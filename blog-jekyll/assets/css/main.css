@@ -414,13 +414,7 @@ body {
   }
 }
 
-/* Icons */
-[class^="icon-"] {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-}
+/* Icons - using Font Awesome via CDN */
 
 /* Syntax Highlighting */
 .highlight {
