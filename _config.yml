@@ -12,10 +12,10 @@ permalink: /blog-jekyll/:year/:month/:day/:title/
 
 # Directory settings - all Jekyll files in blog-jekyll/
 collections_dir: blog-jekyll
-layouts_dir: _layouts
-includes_dir: _includes
+layouts_dir: blog-jekyll/_layouts
+includes_dir: blog-jekyll/_includes
 sass:
-  sass_dir: _sass
+  sass_dir: blog-jekyll/_sass
 
 # Jekyll settings
 plugins:
