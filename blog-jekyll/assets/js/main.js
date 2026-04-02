@@ -16,24 +16,25 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const href = this.getAttribute('href');
-    // Try with and without section- prefix
-    let target = document.querySelector(href) || document.querySelector(href.replace('#', '#section-'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
-
-// Auto-generate table of contents for posts
+// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      // Try with and without section- prefix
+      let target = document.querySelector(href) || document.querySelector(href.replace('#', '#section-'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Auto-generate table of contents for posts
   const postContent = document.querySelector('.post-content');
   if (!postContent) return;
 

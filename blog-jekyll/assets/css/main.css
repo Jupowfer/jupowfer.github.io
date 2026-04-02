@@ -152,6 +152,12 @@ body {
   text-align: center;
 }
 
+.music-player iframe {
+  border: none;
+  display: block;
+  pointer-events: auto;
+}
+
 /* Main Content */
 .main-content {
   flex: 1;
