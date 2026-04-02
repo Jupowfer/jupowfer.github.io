@@ -147,15 +147,25 @@ body {
 
 /* Music Player */
 .music-player {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
   text-align: center;
+  padding: 0 10px;
 }
 
 .music-player iframe {
   border: none;
   display: block;
   pointer-events: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.music-player iframe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Main Content */
