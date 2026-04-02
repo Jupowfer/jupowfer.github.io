@@ -10,6 +10,11 @@ markdown: kramdown
 highlighter: rouge
 permalink: /blog-jekyll/:year/:month/:day/:title/
 
+kramdown:
+  auto_ids: true
+  auto_id_stripping: true
+  parse_block_html: true
+
 # Directory settings - all Jekyll files in blog-jekyll/
 collections_dir: blog-jekyll
 layouts_dir: blog-jekyll/_layouts
