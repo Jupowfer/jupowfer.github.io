@@ -13,6 +13,7 @@ permalink: /blog-jekyll/:year/:month/:day/:title/
 kramdown:
   auto_ids: true
   auto_id_stripping: true
+  auto_id_prefix: section-
   parse_block_html: true
 
 # Directory settings - all Jekyll files in blog-jekyll/

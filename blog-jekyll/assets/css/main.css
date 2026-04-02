@@ -10,6 +10,10 @@
   --border-color: #e0e0e0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
